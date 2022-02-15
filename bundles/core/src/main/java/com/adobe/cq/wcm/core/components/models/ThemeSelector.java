@@ -36,5 +36,10 @@ public interface ThemeSelector extends Component {
     @Nullable
     default String getVariables() {
         return null;
+        
+     }
+    
+    default String resolveThemePath() {
+    	return null;
     }
 }

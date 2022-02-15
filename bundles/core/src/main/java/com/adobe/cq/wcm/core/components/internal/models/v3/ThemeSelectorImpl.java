@@ -102,7 +102,7 @@ public class ThemeSelectorImpl extends AbstractComponentImpl implements ThemeSel
         }
     }
 
-    private String resolveThemePath() {
+    public String resolveThemePath() {
         String themePath = currentPage.getProperties().get(THEME_CF_PATH, StringUtils.EMPTY);
 
         if(StringUtils.isNotEmpty(themePath))
